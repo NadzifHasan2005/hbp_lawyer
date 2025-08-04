@@ -1,0 +1,1107 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --gold-color: #FEC234;
+  --secondary-color: #333333;
+  --text-color: #eeeeee;
+  --background-color: #293243;
+  --gold-color-2: #FCA311;
+
+  --inria-font: 'Inria Serif', serif;
+  --opensans-font: 'Open Sans', sans-serif;
+}
+
+#header-hasanlawyer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+
+}
+.header-grup{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.header-logo-nama {
+  padding: 0;
+}
+.logo-h1{
+  font-family: var(--opensans-font);
+  font-size: 3em;
+}
+.logo-h1-1{
+  color: var(--text-color);
+}
+.logo-h1-2{
+  color: var(--gold-color-2);
+}
+.header-logo-nama p{
+  color: var(--text-color);
+  font-family: var(--inria-font);
+}
+.header-deskripsi-logo{
+  color: var(--text-color);
+  font-family: var(--inria-font);
+  margin: 8.9em 1em;
+  margin-left: 1cm;
+  padding-left: 2cm;
+  width: 20em;
+
+  border-left: white 3px solid;
+}
+.header-deskripsi-logo p{
+  font-family: var(--inria-font);
+  line-height: 1.5;
+  margin-top: 1em; 
+} 
+.header-deskripsi-logo button{
+  font-family: var(--inria-font);
+  background: var(--gold-color-2);
+  color: black;
+  padding: 0.5em 1.5em;
+  border: none;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.header-deskripsi-logo button:hover{
+  content: "";
+  font-family: var(--inria-font);
+  background: rgb(0, 0,0, 0.1);
+  color: white;
+  padding: 0.5em 1.5em;
+  border: none;
+  border-radius: 3px;
+}
+@media(max-width : 600px) {
+    #header-hasanlawyer {
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  .header-grup {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-logo-nama {
+    margin-bottom: 1em;
+  }
+
+  .logo-h1 {
+    font-size: 2em; /* perkecil ukuran font agar pas di layar kecil */
+  }
+
+  .header-deskripsi-logo {
+    margin: 1em 0;
+    margin-left: 0;
+    padding-left: 0;
+    width: 90%; /* lebar konten isi jadi fleksibel */
+    border-left: none; /* menghapus border kiri */
+  }
+
+  .header-deskripsi-logo p {
+    font-size: 0.95em;
+  }
+
+  .header-deskripsi-logo button {
+    width: 100%; /* tombol membentang penuh */
+    margin-top: 1em;
+  }
+}
+
+
+
+
+
+#asalusul{
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+  margin-top: 2cm;
+  font-family: var(--inria-font);
+  
+}
+#asalusul p{
+  text-align: center;
+  margin: 1;
+  line-height: 1.5;
+  font-size: 1em;
+}
+@media(max-width : 600px){
+  #asalusul{
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    font-family: var(--inria-font);
+    
+  }
+  #asalusul p{
+    text-align: center;
+    line-height: 1.5;
+    font-size: 0.8em;
+    width: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+#layanan{
+  margin: 2em;
+  margin-top: 2cm;
+  font-family: var(--inria-font);
+}
+.konten-layanan{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+
+  
+}
+.gambar-layanan img{
+  width: 10cm;
+  margin-right: 1em;
+  border-radius: 5px;
+}
+.deskripsi-layanan{
+  margin-top: none;
+  width: 19em;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--inria-font);
+}
+.deskripsi-layanan h2{
+  font-family: var(--inria-font);
+  color: var(--gold-color-2);
+  text-align: left;
+  line-height: 1.5;
+  font-weight: 1000;
+}
+.deskripsi-layanan p{
+  font-family: var(--inria-font);
+  line-height: 1.5;
+  text-align: justify;
+}
+.deskripsi-layanan button{
+  font-family: var(--inria-font);
+  background: var(--gold-color-2);
+  color: black;
+  padding: 0.5em;
+  border: none;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.deskripsi-layanan button:hover{
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--inria-font);
+
+  padding: 0.5em 1.5em;
+  border: none;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.button-deskripsi-layanan{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-layanan-1{
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+  margin-top: 1cm;
+
+  justify-content: center;
+  align-items: center;
+}
+.list-layanan-1 a{
+  text-decoration: none;
+}
+.corporate{
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 4px;
+  width: 6cm;
+  height: 9.72cm;
+  transition: 0.2s;
+  border-top: var(--gold-color-2) 1em solid;
+  /* border: var(--gold-color-2) 1px solid; */
+}
+.judul-corporate{
+  font-family: var(--inria-font);
+  color: var(--gold-color-2);
+  text-align: left;
+  line-height: 1.5;
+  font-weight: 1000;
+}
+.judul-corporate img{
+  display: flex;
+  flex-direction: column;
+  width: 4.9cm;
+  height: 4.9cm;
+  justify-self: center;
+  align-items: center;
+}
+.judul-corporate h3{
+  font-family: var(--inria-font);
+  color: var(--background-color); 
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 1000;
+}
+.list-corporate{
+  ul{
+    align-items: center;
+    color: black;
+  }
+}
+/* .button-corporate{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+.button-corporate button{
+  padding: 3px;
+
+  border-radius: 3px;
+  background-color: var(--background-color);
+  color: #eeeeee;
+} */
+.corporate:hover{
+  content: "";
+  border-top: var(--background-color) 0.5em solid;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.2s;
+}
+
+
+
+
+.litigation{
+  justify-content: center;
+  align-items: center;
+
+  width: 6cm;
+  border-radius: 4px;
+  height: 9.72cm;
+  font-family: var(--inria-font);
+  transition: 0.2s;
+  border-top: var(--gold-color-2) 1em solid;
+}
+.judul-litigation{
+  
+  color: var(--gold-color-2);
+  text-align: left;
+  line-height: 1.5;
+  font-weight: 1000;
+}
+.judul-litigation img{
+  
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5cm;
+  width: 4cm;
+  height: 4cm;
+  justify-self: center;
+  align-items: center;
+}
+.judul-litigation h3{
+  font-family: var(--inria-font);
+  color: var(--background-color); 
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 1000;
+}
+.list-litigation{
+  ul{
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+}
+.litigation:hover{
+  content: "";
+  border-top: var(--background-color) 0.5em solid;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.2s;
+}
+
+
+.HAKI{
+  justify-content: center;
+  align-items: center;
+
+  width: 6cm;
+  height: 9.72cm;
+  font-family: var(--inria-font);
+  border-top: var(--gold-color-2) 1em solid;
+
+  transition: 0.2s;
+}
+.judul-HAKI{
+  
+  color: var(--gold-color-2);
+  text-align: left;
+  line-height: 1.5;
+  font-weight: 1000;
+}
+.judul-HAKI img{
+  display: flex;
+  flex-direction: column;
+  width: 4cm;
+  height: 4cm;
+
+  margin-top: 0.5cm;
+  justify-self: center;
+  align-items: center;
+}
+.judul-HAKI h3{
+  font-family: var(--inria-font);
+  color: var(--background-color); 
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 1000;
+}
+.list-HAKI{
+  ul{
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+}
+.HAKI:hover{
+  content: "";
+  border-top: var(--background-color) 0.5em solid;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.2s;
+}
+
+.list-layanan-2{
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+  margin-top: 1cm;
+
+  justify-content: center;
+  align-items: center;
+}
+.list-layanan-2 a{
+  text-decoration: none;
+}
+.iht{
+  justify-content: center;
+  align-items: center;
+
+  width: 6cm;
+  height: 9.72cm;
+  font-family: var(--inria-font);
+  border-top: var(--gold-color-2) 1em solid;
+
+  transition: 0.2s;
+}
+.judul-iht{
+  
+  color: var(--gold-color-2);
+  text-align: left;
+  line-height: 1.5;
+  font-weight: 1000;
+}
+.judul-iht img{
+  display: flex;
+  flex-direction: column;
+  width: 4cm; 
+  height: 4cm;
+
+  margin-top: 0.5cm;
+  justify-self: center;
+  align-items: center;
+}
+.judul-iht h3{
+  font-family: var(--inria-font);
+  color: var(--background-color); 
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 1000;
+}
+.list-iht{
+  ul{
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+}
+.iht:hover{
+  content: "";
+  border-top: var(--background-color) 0.5em solid;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.2s;
+}
+
+
+
+@media(max-width : 600px){
+  #layanan{  
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    font-family: var(--inria-font);
+    
+  }
+  .konten-layanan{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+  .deskripsi-layanan{
+    width: auto; /* lebar konten isi jadi fleksibel */
+    justify-content: center;
+    align-items: center;
+  }
+  .deskripsi-layanan{
+    width: 19em;
+    font-family: var(--inria-font);
+  }
+  .deskripsi-layanan h2{
+    font-family: var(--inria-font);
+    color: var(--gold-color-2);
+    line-height: 1.5;
+    font-weight: 1000;
+    text-align: center;
+  }
+  .deskripsi-layanan p{
+    font-family: var(--inria-font);
+    line-height: 1.5;
+    text-align: center;
+    font-size: 0.8em;
+  }
+  .konten-layanan .gambar-layanan img{
+    /* display: none;*/
+    width: 100%;
+    margin-right: 0;
+    border-radius: 5px;
+  }
+  .deskripsi-layanan button{
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  .list-layanan-1{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+
+
+  .corporate{
+    justify-content: center;
+    align-items: center;
+    width: 7cm;
+    height: 8cm;
+    transition: 0.2s;
+    border-top: var(--gold-color-2) 0.5em solid;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .judul-corporate{
+    font-family: var(--inria-font);
+    color: var(--gold-color-2);
+    text-align: left;
+    line-height: 1.5;
+    font-weight: 1000;
+  }
+  .judul-corporate img{
+    display: flex;
+    flex-direction: column;
+    width: 3cm;
+    height: 3cm;
+    justify-self: center;
+    align-items: center;
+  }
+  .judul-corporate h3{
+    font-family: var(--inria-font);
+    color: var(--background-color); 
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 1000;
+  }
+  .list-corporate{
+    ul{
+      align-items: center;
+      color: black;
+    }
+    li{
+      font-size: 0.8em;
+    }
+  }
+
+  .litigation{
+    justify-content: center;
+    align-items: center;
+    width: 7cm;
+    height: 8cm;
+    transition: 0.2s;
+    border-top: var(--gold-color-2) 0.5em solid;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .judul-litigation{
+    font-family: var(--inria-font);
+    color: var(--gold-color-2);
+    text-align: left;
+    line-height: 1.5;
+    font-weight: 1000;
+  }
+  .judul-litigation img{
+    display: flex;
+    flex-direction: column;
+    width: 3cm;
+    height: 3cm;
+    justify-self: center;
+    align-items: center;
+  }
+  .judul-litigation h3{
+    font-family: var(--inria-font);
+    color: var(--background-color); 
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 1000;
+  }
+  .list-litigation{
+    ul{
+      align-items: center;
+      color: black;
+    }
+    li{
+      font-size: 0.8em;
+    }
+  }
+
+  .HAKI{
+    justify-content: center;
+    align-items: center;
+    width: 7cm;
+    height: 8cm;
+    transition: 0.2s;
+    border-top: var(--gold-color-2) 0.5em solid;
+    box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+  }
+  .judul-HAKI{
+    font-family: var(--inria-font);
+    color: var(--gold-color-2);
+    text-align: left;
+    line-height: 1.5;
+    font-weight: 1000;
+  }
+  .judul-HAKI img{
+    display: flex;
+    flex-direction: column;
+    width: 3cm;
+    height: 3cm;
+    justify-self: center;
+    align-items: center;
+  }
+  .judul-HAKI h3{
+    font-family: var(--inria-font);
+    color: var(--background-color); 
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 1000;
+  }
+  .list-HAKI{
+    ul{
+      align-items: center;
+      color: black;
+    }
+    li{
+      font-size: 0.8em;
+    }
+  }
+  .iht{
+    justify-content: center;
+    align-items: center;
+    width: 7cm;
+    height: 8cm;
+    transition: 0.2s;
+    border-top: var(--gold-color-2) 0.5em solid;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .judul-iht{
+    font-family: var(--inria-font);
+    color: var(--background-color);
+    text-align: left;
+    line-height: 1.5;
+    font-weight: 1000;
+  }
+  .judul-iht img{
+    display: flex;
+    flex-direction: column;
+    width: 3cm;
+    height: 3cm;
+    justify-self: center;
+    align-items: center;
+  }
+  .judul-iht h3{
+    font-family: var(--inria-font);
+    color: var(--background-color); 
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 1000;
+  }
+  .list-iht {
+    ul{
+      align-items: center;
+      color: black;
+    }
+    li{
+      font-size: 0.8em;
+    }
+  }
+
+}
+
+
+
+
+
+#tim{
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  margin-top: 2cm;
+  font-family: var(--inria-font);
+
+  justify-content: center;
+  align-items: center;
+  a{
+    text-decoration: none;
+  }
+
+}
+.tim-deskripsi h1{
+  text-align: center;
+  color: var(--gold-color-2);
+
+  justify-self: center;
+  align-items: center;
+}
+.tim-deskripsi p{
+  text-align: center;
+  margin: 2cm;
+  line-height: 1.5;
+  font-size: 1em;
+  
+}
+.tim-1{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 15em;
+  padding: 0.7em; 
+  
+  border-radius: 6px;
+  transition: 0.2s;
+  border-top: var(--gold-color-2) 0.5em solid;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.tim-1 h3{
+  font-size: 1em;
+  color: black;
+  text-align: center;
+}
+.tim-1 p{
+  color: black;
+  font-size: 1em;
+  text-align: center;
+}
+.tim-1:hover{
+  background-color: var(--background-color);
+  p, h3{
+    color: var(--text-color);
+  }
+
+}
+
+
+.tim-2{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1cm;
+  gap: 1cm;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.tim-2 h3{
+  text-align: center;
+  color: black;
+}
+.tim-2 p{
+  color: black;
+}
+
+.tim-2-1{
+  width: 16em;
+  padding: 0.7em; 
+  height: 3.5cm;
+  
+  text-align: center;
+  border-radius: 6px;
+  transition: 0.2s;
+  border-top: var(--gold-color-2) 0.5em solid;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.tim-2-2{
+  width: 16em;
+  padding: 0.7em; 
+
+  text-align: center;
+  border-radius: 6px;
+  transition: 0.2s;
+  border-top: var(--gold-color-2) 0.5em solid;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.tim-2-2 li{
+  list-style: circle;
+  color: black;
+}
+.tim-2-3{
+  width: 16em;
+  padding: 0.7em;
+  height: 3.5cm;
+
+  text-align: center;
+  border-radius: 6px;
+  transition: 0.2s;
+  border-top: var(--gold-color-2) 0.5em solid;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media(max-width : 600px){
+  .tim-2{
+    display: flex;
+    flex-direction: column;
+  }
+  .tim-deskripsi p{
+    font-size: 0.9em;
+    width: 20em;
+  }
+}
+
+
+
+
+
+#klien{
+  margin: 0;
+}
+
+.klien-header{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top:12em ;
+  font-family: var(--inria-font);
+}
+.klien-header h1{
+  color: var(--gold-color-2);
+}
+.klien-gambar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1cm;
+}
+.klien-gambar img{
+  width: 10cm;
+  border-radius: 6px;
+
+}
+.klien-deskripsi{
+  margin: 2cm;
+  justify-content: center;
+  align-items: center;
+}
+.klien-deskripsi p{
+  font-family: var(--inria-font);
+  text-align: center;
+  
+  line-height: 1.5;
+  font-size: 1em;
+}
+
+.klien-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.klien-button button{
+  background-color: var(--gold-color-2);
+  border: var(--gold-color-2) solid 2px;
+  font-family: var(--inria-font);
+  padding: 10px;
+  top: -1cm;
+
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.klien-button button:hover{
+  background-color: #8E5900;
+  border: #FDA10A solid 2px;
+  color: #FDA10A  ;
+  padding: 10px;
+  top: -1cm;
+
+  border-radius: 8px;
+}
+
+@media(max-width : 600px){
+  .klien-gambar img{
+    width: 7cm;
+    border-radius: 6px;
+
+  }
+  .klien-deskripsi p{
+    font-size: 0.9em;
+  }
+}
+
+
+
+#footer{
+  background-color: var(--background-color);
+  font-family: var(--inria-font);
+  
+}
+#footer img{
+  top: 14em;
+  left: -12cm;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 1cm;
+  padding: 1em;
+
+}
+#footer h3{
+  font-size: 1.5em;
+  margin-left: 1.5cm;
+  margin-top: 2em;
+  padding-top: 2em;
+
+  font-family: var(--inria-font);
+  color: white;
+}
+#footer span{
+  color: var(--gold-color-2);
+}
+.footer-1-email{
+  flex-direction: row;
+  display: flex;
+  flex-direction: row;
+}
+.footer-1-email .material-icons{
+  color: var(--gold-color-2);
+  padding-top: 0.4em;
+  
+  font-size: 1cm;
+}
+.footer-1-email p{
+  color: white;
+  padding-top: 0.4em;
+  padding-left: 1em;
+}
+.footer-1-phone{
+  flex-direction: row;
+  display: flex;
+  flex-direction: row;
+}
+.footer-1-phone .material-icons{
+  color: var(--gold-color-2);
+  padding-top: 0.4em;
+  
+  font-size: 1cm;
+}
+.footer-1-phone  a{
+  color: white;
+  padding-top: 1em;
+  padding-left: 1em;
+  text-decoration: none;
+}
+.footer-1-location{
+  flex-direction: row;
+  display: flex;
+  flex-direction: row;
+}
+.footer-1-location .material-icons{
+  color: var(--gold-color-2);
+  padding-top: 0.4em;
+  
+  font-size: 1cm;
+}
+.footer-1-location  p{
+  color: white;
+  padding-top: 0.5em;
+  padding-left: 1em;
+  text-decoration: none;
+}
+
+
+.footer-2-sosmed{
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  justify-content: center;
+}
+.footer-2 h2{
+  color: #eeeeee;
+  font-family: var(--inria-font);
+}
+
+.footer-2-sosmed-instagram  .fa-instagram{
+  color: #eeeeee;
+  font-size: 1.5em;
+  transition: 0.2s;
+}
+.footer-2-sosmed-linkedin  .fa-linkedin{
+  color: #eeeeee;
+  font-size: 1.5em;
+  transition: 0.2s;
+}
+.footer-2-sosmed-facebook  .fa-facebook{
+  color: #eeeeee;
+  font-size: 1.5em;
+  transition: 0.2s;
+}
+.footer-2-sosmed-instagram  .fa-instagram:hover{
+  color: var(--gold-color-2);
+  font-size: 1.5em;
+  transition: 0.2s;
+}
+.footer-2-sosmed-linkedin  .fa-linkedin:hover{
+  color: var(--gold-color-2);
+  font-size: 1.5em;
+  transition: 0.2s;
+}
+.footer-2-sosmed-facebook  .fa-facebook:hover{
+  color: var(--gold-color-2);
+  font-size: 1.5em;
+  transition: 0.2s;
+}
+
+@media(max-width : 600px){
+  #footer h3{
+    font-size: 1.5em;
+    margin-left: 1cm;
+    margin-top: 4em;
+
+    font-family: var(--inria-font);
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 1cm;
+  }
+  
+  .footer-1-email{
+    padding-left: 1.5cm;
+    p{
+      font-size: 0.8em;
+
+    }
+  }
+  .footer-1-phone{
+    padding-left: 1.5cm;
+    a{
+      font-size: 0.8em;
+    }
+  }
+  .footer-1-location{
+    padding-left: 1.5cm;
+    p{
+      font-size: 0.8em;
+      padding: 1em;
+    }
+  }
+
+  .footer-1-email .material-icons{
+    font-size: 0.5cm;
+    padding-top: 0.5cm;
+  }
+  .footer-1-phone .material-icons{
+    font-size: 0.5cm;
+    padding-top: 0.3cm;
+  }
+  .footer-1-location .material-icons{
+    font-size: 0.5cm;
+    padding-top: 0.5cm;
+  }
+
+  .footer-2{
+    padding-top: 1cm;
+    h2{
+      display: none;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
