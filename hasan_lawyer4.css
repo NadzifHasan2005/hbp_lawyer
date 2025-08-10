@@ -16,13 +16,78 @@ body{
   --inria-font: 'Inria Serif', serif;
   --opensans-font: 'Open Sans', sans-serif;
 }
+#nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5cm;
+  background-color: #293243;
+}
 
+.nav-header h1 {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: rgb(0, 0, 0); /* atau sesuai dengan tema kamu */
+  font-family: var(--opensans-font);
+  color: white;
+}
+.nav-header span{
+  color: var(--gold-color-2);
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list ul {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: rgb(0, 0, 0); /* bisa juga pakai var(--fontcolor-primary) */
+  font-weight: 500;
+  transition: color 0.3s ease;
+  color: white;
+  font-family: var(--inria-font);
+  font-weight: 700;
+  padding: 13px;
+  transition: 0.2s;
+}
+
+.nav-list a:hover {
+  color: #ffd700; /* warna saat hover, bisa diganti */
+  background-color: rgba(83, 83, 83, 0.3);
+  border-radius: 1em;
+  transition: 0.2s;
+}
+
+/* Responsive (opsional) */
+@media (max-width: 768px) {
+  #nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+  }
+
+  .nav-list ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+  }
+}
 #header-hasanlawyer{
+
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--background-color);
-
+  padding: 2em;
 }
 .header-grup{
   display: flex;
