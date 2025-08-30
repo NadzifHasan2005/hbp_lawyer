@@ -19,16 +19,19 @@
 <body>
     <section id="nav">
         <div class="nav-header">
-            <h1>HBP<span>.</span></h1>
+            <a href=""><h1>HBP<span>.</span></h1></a>
         </div>
-        <div class="nav-list">
-            <ul>
-                <li><a href="#">Beranda</a></li>
-                <li><a href="#">Layanan</a></li>
-                <li><a href="#">Kontak</a></li>
-            </ul>
+        <div class="nav-list" id="mynav-list">
+            <a href="#home" class="active">Beranda</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#klien">Klien</a>
+            <a href="#kontak">Kontak</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
     </section>
+
     <section id="header-hasanlawyer">
         
         <div class="header-grup">
@@ -244,5 +247,6 @@
         </div>
 
     </section>
+    <script src="index.js"></script>
 </body>
 </html> 
